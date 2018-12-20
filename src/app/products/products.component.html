@@ -1,0 +1,13 @@
+
+    <div class="container-fluir bg-dark" style="margin-top:5px;">
+      <div class="row" style="Margin:5px;">
+          <div *ngFor="let producto of Productos" class="card col-4 border-dark" style="width: 18rem;">
+              <div class="card-header">
+                {{producto.Codigo}} - {{producto.Nombre}}
+              </div>
+                <div class="card-body">
+                <p class="card-text">{{producto.Descripcion}}</p>
+              </div>
+            </div>
+      </div>       
+     </div>

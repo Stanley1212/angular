@@ -1,0 +1,16 @@
+
+<input type="text" [(ngModel)]="userid" (keyup.enter)="loaduser()"/>
+<hr/>
+<div class="container" *ngIf="user" style="margin-top:5px;">
+  <div class="row" style="Margin:5px;">
+     <div class="card border-dark" style="width: 18rem;">
+        <div class="card-header">
+         {{user.first_name}} - {{user.last_name}}
+        </div>
+        <img class="card-img-top" src="{{user.avatar}}" width="100px" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Deportista</p>
+        </div>
+      </div>
+  </div>       
+</div>
